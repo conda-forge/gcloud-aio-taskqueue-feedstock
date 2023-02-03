@@ -1,13 +1,13 @@
 {% set name = "gcloud-aio-taskqueue" %}
-{% set version = "5.0.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gcloud-aio-taskqueue-{{ version }}.tar.gz
-  sha256: 04d18a231e64bf63db1bd9594e234d9d1f4be90af4f20cce277452803f0c210f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c52815e436e888f84600e34f2e287e30f2038f159c0b9ab29201d64e680ec65b
 
 build:
   noarch: python
@@ -16,12 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<4.0
+    - python >=3.7,<4.0
     - pip
     - poetry-core >=1.0.0
   run:
-    - python >=3.6,<4.0
-    - backoff >=1.0.0,<2.0.0
+    - python >=3.7,<4.0
     - gcloud-aio-auth >=3.1.0,<5.0.0
 
 test:
