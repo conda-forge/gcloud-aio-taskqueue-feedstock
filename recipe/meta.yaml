@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gcloud_aio_taskqueue-{{ version }}.tar.gz
   sha256: 984040492e46f218841c3ff8e5ad07924306e80e32d413b9f80b23ef89aa2180
 
 build:
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.7,<4.0
     - gcloud-aio-auth >=3.1.0,<5.0.0
+    - setuptools >=66.0.0,<67.0.0
 
 test:
   imports:
