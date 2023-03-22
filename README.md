@@ -1,11 +1,11 @@
-About gcloud-aio-taskqueue
-==========================
+About gcloud-aio-taskqueue-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gcloud-aio-taskqueue-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/talkiq/gcloud-aio
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gcloud-aio-taskqueue-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python Client for Google Cloud Task Queue
 
