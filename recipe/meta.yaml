@@ -1,5 +1,5 @@
 {% set name = "gcloud-aio-taskqueue" %}
-{% set version = "6.1.0" %}
+{% set version = "7.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gcloud_aio_taskqueue-{{ version }}.tar.gz
-  sha256: 984040492e46f218841c3ff8e5ad07924306e80e32d413b9f80b23ef89aa2180
+  sha256: 7a0965d057c318bbd17f08a452a674979476dbf1975c017d6aedcb5cfddd6955
 
 build:
   noarch: python
