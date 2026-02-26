@@ -30,13 +30,8 @@ tests:
   - python:
       imports:
         - gcloud.aio.taskqueue
+      pip_check: true
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
 
 about:
   summary: Python Client for Google Cloud Task Queue
