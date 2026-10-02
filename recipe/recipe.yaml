@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gcloud-aio-taskqueue
-  version: 7.0.0
+  version: "7.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gcloud_aio_taskqueue-${{ version }}.tar.gz
-  sha256: 7a0965d057c318bbd17f08a452a674979476dbf1975c017d6aedcb5cfddd6955
+  sha256: fc38214884ed0dff3def6ec3e78785b93fa67f5390cec0091f4223e39b84f9a2
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
